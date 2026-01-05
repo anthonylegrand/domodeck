@@ -1,0 +1,14 @@
+{
+  "common": {
+    "save": "Enregistrer",
+    "cancel": "Annuler"
+  },
+  "home": {
+    "title": "Mon Deck",
+    "no_tiles": "Aucun capteur ajouté"
+  },
+  "settings": {
+    "theme": "Apparence",
+    "language": "Langue"
+  }
+}
