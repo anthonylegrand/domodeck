@@ -1,9 +1,22 @@
-import { Text, View } from "react-native";
+import { DashboardNavbar } from "@/components/DashboardNavbar";
+import { TilesContainers } from "@/components/TileCard";
+import { Text, useLocalTheme, View } from "@/components/ui/Themed";
+import i18n from "@/i18n";
 
-export default function TabOneScreen() {
+export default function DashboardScreen() {
+  const theme = useLocalTheme();
+
   return (
-    <View className="flex-1 justify-center items-center">
-      <Text className="text-white text-4xl font-bold">Tuto by Codereo</Text>
+    <View type="background" style={{ flex: 1 }}>
+      <View>
+        <Text type="title" style={theme.components.mainTitle.style}>
+          {theme.components.mainTitle.text ?? i18n.t("pages_titles.dashboard")}
+        </Text>
+
+        <DashboardNavbar />
+      </View>
+
+      <TilesContainers />
     </View>
   );
 }

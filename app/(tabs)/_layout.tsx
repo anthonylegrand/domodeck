@@ -1,3 +1,4 @@
+import { useThemeStore } from "@/stores/useThemeStore";
 import FontAwesome from "@expo/vector-icons/FontAwesome";
 import { Tabs } from "expo-router";
 import React from "react";
@@ -10,25 +11,36 @@ function TabBarIcon(props: {
 }
 
 export default function TabLayout() {
+  const theme = useThemeStore((s) => s.theme);
+
   return (
     <Tabs
       screenOptions={{
-        tabBarActiveTintColor: "red",
+        tabBarActiveTintColor: theme.colors.primary,
         headerShown: false,
       }}
     >
       <Tabs.Screen
         name="index"
         options={{
-          title: "Tab One",
-          tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
+          title: "Dashboard",
+          tabBarIcon: ({ color }) => (
+            <TabBarIcon name="dashboard" color={color} />
+          ),
         }}
       />
       <Tabs.Screen
-        name="two"
+        name="servers"
         options={{
-          title: "Tab Two",
-          tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
+          title: "Servers",
+          tabBarIcon: ({ color }) => <TabBarIcon name="server" color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="options"
+        options={{
+          title: "Options",
+          tabBarIcon: ({ color }) => <TabBarIcon name="cog" color={color} />,
         }}
       />
     </Tabs>
