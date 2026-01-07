@@ -7,6 +7,7 @@ export type Theme = {
     primary: string;
     text: string;
     muted: string;
+    border: string;
   };
   spacing: {
     s: number;
@@ -34,7 +35,10 @@ export type Theme = {
       text: TextStyle;
       textSelected: TextStyle;
     };
-    tileContainer: ViewStyle;
+    tileContainer: {
+      display: "col" | "flex";
+      style: ViewStyle;
+    };
     tileCard: {
       container: ViewStyle;
       title: TextStyle;

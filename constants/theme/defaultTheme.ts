@@ -7,6 +7,7 @@ export const defaultTheme: Theme = {
     primary: "#3B82F6",
     text: "#111827",
     muted: "#8C8C96",
+    border: "#E5E7EB",
   },
   spacing: { s: 8, m: 16, l: 24 },
   radius: { s: 8, m: 12 },
@@ -34,10 +35,8 @@ export const defaultTheme: Theme = {
       },
     },
     tileContainer: {
-      flex: 1,
-      flexDirection: "row",
-      flexWrap: "wrap",
-      gap: 25,
+      display: "flex",
+      style: {},
     },
     tileCard: {
       container: {},

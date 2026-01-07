@@ -37,7 +37,7 @@ export const PageContainer = ({ children }: Props) => {
       style={{
         flex: 1,
         paddingTop: insets.top + designPadding,
-        paddingBottom: insets.bottom + designPadding,
+        paddingBottom: insets.bottom,
         paddingLeft: insets.left + designPadding,
         paddingRight: insets.right + designPadding,
       }}
