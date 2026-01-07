@@ -1,7 +1,7 @@
-import { Theme } from "@/constants/theme/theme.types";
+import { Theme } from "@/components/ui/Themed/theme.types";
 import { useMemo } from "react";
 import { View as DefaultView } from "react-native";
-import { useLocalTheme } from "./useLocalTheme";
+import { useLocalTheme } from "../useLocalTheme";
 
 type ViewType = "background" | "surface";
 

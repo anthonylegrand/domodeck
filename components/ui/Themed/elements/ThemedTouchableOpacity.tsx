@@ -3,8 +3,8 @@ import {
   TouchableOpacity as DefaultTouchableOpacity,
   TouchableOpacityProps,
 } from "react-native";
+import { useLocalTheme } from "../useLocalTheme";
 import { createStyles, ViewThemeProps } from "./ThemedView";
-import { useLocalTheme } from "./useLocalTheme";
 
 type ThemedTouchableProps = TouchableOpacityProps & ViewThemeProps;
 

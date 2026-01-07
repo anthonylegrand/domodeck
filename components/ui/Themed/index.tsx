@@ -1,5 +1,5 @@
 export * from "./useLocalTheme";
 
-export * from "./ThemedText";
-export * from "./ThemedTouchableOpacity";
-export { View } from "./ThemedView";
+export * from "./elements/ThemedText";
+export * from "./elements/ThemedTouchableOpacity";
+export { View } from "./elements/ThemedView";

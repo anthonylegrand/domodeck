@@ -1,4 +1,4 @@
-import { Theme } from "./theme.types";
+import { Theme } from "../components/ui/Themed/theme.types";
 
 export const defaultTheme: Theme = {
   colors: {

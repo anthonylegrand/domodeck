@@ -1,4 +1,4 @@
-import { Theme } from "@/constants/theme/theme.types";
+import { Theme } from "@/components/ui/Themed/theme.types";
 import {
   Droplet,
   Lightbulb,

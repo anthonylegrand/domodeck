@@ -1,4 +1,4 @@
-import { Theme } from "@/constants/theme/theme.types";
+import { Theme } from "@/components/ui/Themed/theme.types";
 import { useMemo } from "react";
 import { Text as DefaultText } from "react-native";
 import { useLocalTheme } from "./useLocalTheme";

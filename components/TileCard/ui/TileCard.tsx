@@ -1,6 +1,6 @@
 import React, { useMemo } from "react";
 
-import { Theme } from "@/constants/theme/theme.types";
+import { Theme } from "@/components/ui/Themed/theme.types";
 import { useWindowDimensions, ViewStyle } from "react-native";
 import { Text, TouchableOpacity, useLocalTheme } from "../../ui/Themed";
 
